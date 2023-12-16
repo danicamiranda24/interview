@@ -17,6 +17,7 @@ class GroupsDao extends DatabaseAccessor<Database> with _$GroupsDaoMixin {
 
   Future adjustBalance(int balance, String groupId) async {
     final companion = GroupsCompanion(balance: Value(balance));
+
     return (update(groups)..where((tbl) => tbl.id.equals(groupId))).write(companion);
   }
 
@@ -25,4 +26,6 @@ class GroupsDao extends DatabaseAccessor<Database> with _$GroupsDaoMixin {
   Stream<Group?> watchGroup(String groupId) {
     return (select(groups)..where((tbl) => tbl.id.equals(groupId))).watchSingleOrNull();
   }
+
 }
+

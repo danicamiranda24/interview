@@ -31,23 +31,24 @@ dependencies:
   flutter:
     sdk: flutter
 
-  drift:
-  sqlite3_flutter_libs:
-  get_it:
-  injectable:
-  uuid:
-  path:
-  path_provider:
+  drift: "2.14.1"
+  sqlite3_flutter_libs: "0.5.18"
+  get_it: "7.6.4"
+  injectable: "2.3.2"
+  uuid: "4.2.2"
+  path: "1.8.3"
+  path_provider: "2.1.1"
   go_router: ^12.1.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  intl: "0.19.0"
 
 dev_dependencies:
-  flutter_test:
+  flutter_test: 
     sdk: flutter
-  drift_dev:
-  injectable_generator:
+  drift_dev: "2.14.1"
+  injectable_generator: "2.4.1"
   build_runner: ^2.2.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
